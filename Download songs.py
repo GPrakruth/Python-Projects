@@ -33,7 +33,7 @@ class Download(object):
 if __name__ == '__main__':
     #url = input("Enter url to song here\n  >>  ")
     #Download(url)
-    links = pd.DataFrame(pd.read_excel("Youtube_links.xlsx",sheet_name="Sheet1"))
+    links = (pd.read_excel("Youtube_links.xlsx",sheet_name="Sheet1"))
     for url  in links.Youtube:
         Download(url)
         print("\n \ndownload is finished for url "+url)
